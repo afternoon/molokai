@@ -3,8 +3,10 @@
 " Author: Tomas Restrepo <tomas@winterdom.com>
 "
 " Note: Based on the monokai theme for textmate
-" by Wimer Hazenberg and its darker variant 
+" by Wimer Hazenberg and its darker variant
 " by Hamish Stuart Macpherson
+"
+" Modified by Ben Godfrey <ben@ben2.com>
 "
 
 hi clear
@@ -26,7 +28,6 @@ else
     let s:molokai_original = 0
 endif
 
-
 hi Boolean         guifg=#AE81FF
 hi Character       guifg=#E6DB74
 hi Number          guifg=#AE81FF
@@ -37,10 +38,11 @@ hi Cursor          guifg=#000000 guibg=#F8F8F0
 hi Debug           guifg=#BCA3A3               gui=bold
 hi Define          guifg=#66D9EF
 hi Delimiter       guifg=#8F8F8F
-hi DiffAdd                       guibg=#13354A
-hi DiffChange      guifg=#89807D guibg=#4C4745
-hi DiffDelete      guifg=#960050 guibg=#1E0010
-hi DiffText                      guibg=#4C4745 gui=italic,bold
+
+hi DiffAdd         guifg=#D2EBBE guibg=#437019
+hi DiffDelete      guifg=#40000A guibg=#700009
+hi DiffChange                    guibg=#2B5B77
+hi DiffText        guifg=#8fbfdc guibg=#000000
 
 hi Directory       guifg=#A6E22E               gui=bold
 hi Error           guifg=#960050 guibg=#1E0010
@@ -138,10 +140,10 @@ if &t_Co > 255
    hi Define          ctermfg=81
    hi Delimiter       ctermfg=241
 
-   hi DiffAdd                     ctermbg=24
-   hi DiffChange      ctermfg=181 ctermbg=239
-   hi DiffDelete      ctermfg=162 ctermbg=53
-   hi DiffText                    ctermbg=102   cterm=bold
+   hi DiffAdd         ctermfg=15  ctermbg=22
+   hi DiffDelete      ctermfg=52  ctermbg=52
+   hi DiffChange      ctermfg=15  ctermbg=24
+   hi DiffText                    ctermbg=31
 
    hi Directory       ctermfg=118               cterm=bold
    hi Error           ctermfg=219 ctermbg=89
